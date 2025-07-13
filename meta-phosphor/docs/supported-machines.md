@@ -90,6 +90,7 @@ covered by [Jenkins](https://jenkins.openbmc.org/job/ci-openbmc/) CI testing.
   * x11spi
 * tyan
   * s7106
+  * s8030
   * s8036
 * ufispace
   * ncplite
