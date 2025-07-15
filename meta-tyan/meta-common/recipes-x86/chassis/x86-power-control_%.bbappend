@@ -1,11 +1,14 @@
-FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
-SRC_URI:append = " \
-    file://power-config-host0.json \
-"
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}/${MACHINE}:"
 
-RDEPENDS:${PN}:append = " bash"
+SRC_URI:append:s7106 = " file://power-config-host0.json"
+SRC_URI:append:s8036 = " file://power-config-host0.json"
 
-do_install:append() {
-    install -d ${D}${datadir}/${PN}
-    install -m 0644 ${UNPACKDIR}/power-config-host0.json ${D}${datadir}/${PN}
+do_install:append:s7106() {
+    install -m 0755 -d ${D}/${datadir}/${PN}
+    install -m 0644 -D ${UNPACKDIR}/power-config-host0.json ${D}/${datadir}/${PN}/
+}
+
+do_install:append:s8036() {
+    install -m 0755 -d ${D}/${datadir}/${PN}
+    install -m 0644 -D ${UNPACKDIR}/power-config-host0.json ${D}/${datadir}/${PN}/
 }

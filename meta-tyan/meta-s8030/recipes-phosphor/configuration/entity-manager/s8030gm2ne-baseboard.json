@@ -464,7 +464,7 @@
         {
             "Connector": {
                 "Name": "System Fan Connector 1",
-                "Pwm": 3,
+                "Pwm": 1,
                 "Tachs": [1]
             },
             "EntityId": 7,
@@ -476,7 +476,7 @@
         {
             "Connector": {
                 "Name": "System Fan Connector 2",
-                "Pwm": 4,
+                "Pwm": 2,
                 "Tachs": [2]
             },
             "EntityId": 7,
@@ -488,7 +488,7 @@
         {
             "Connector": {
                 "Name": "System Fan Connector 3",
-                "Pwm": 5,
+                "Pwm": 3,
                 "Tachs": [3]
             },
             "EntityId": 7,
@@ -500,37 +500,13 @@
         {
             "Connector": {
                 "Name": "System Fan Connector 4",
-                "Pwm": 6,
+                "Pwm": 4,
                 "Tachs": [4]
             },
             "EntityId": 7,
             "EntityInstance": 0,
             "Index": 4,
             "Name": "fan4",
-            "Type": "AspeedFan"
-        },
-        {
-            "Connector": {
-                "Name": "System Fan Connector unused 11",
-                "Pwm": 1,
-                "Tachs": [1]
-            },
-            "EntityId": 7,
-            "EntityInstance": 0,
-            "Index": 5,
-            "Name": "fan22",
-            "Type": "AspeedFan"
-        },
-        {
-            "Connector": {
-                "Name": "System Fan Connector unused 22",
-                "Pwm": 2,
-                "Tachs": [2]
-            },
-            "EntityId": 7,
-            "EntityInstance": 0,
-            "Index": 6,
-            "Name": "fan22",
             "Type": "AspeedFan"
         }
     ],
